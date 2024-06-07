@@ -210,8 +210,8 @@ p{
     div.maindiv{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        height: 900px;
+        flex-direction: column;
+        height: fit-content;
         width: 100vw;
         gap: 10px;
     }
@@ -219,23 +219,24 @@ p{
     .first{
         background-color: rgb(117, 65, 200);
         border-radius: 10px;
-        flex: 20%;
+        flex: 100%;
         margin-left: 0px;
         height: 200px;
     
     }
     .second{
         background-color: rgb(72, 85, 106);
-        flex-basis: 40%;
+        flex-basis: 100%;
         border-radius: 10px;
         flex-basis:50%;
         height: 200px;
+        margin-top: 0px;
     }
     .third{
         background-color: rgba(255, 255, 255, 0.916);
         border-radius: 10px;
         order: 3;
-        flex-basis:40%;
+        flex-basis:100%;
         margin-top: 0px;
         margin-left: 0px;
         flex-grow: 2;
@@ -244,17 +245,18 @@ p{
     .fourth{
         background-color: rgb(25, 33, 46);
         border-radius: 10px;
-        flex-basis: 50%;
+        flex-basis: 100%;
         order: 4;
         margin-top: 0px;
         height: 200px;
     }
     .fifth{
         background-color: rgba(255, 255, 255, 0.984);
-        flex-basis: 49%;
+        flex: 100%;
         border-radius: 10px;
         order: 5;
         margin-top: 0px;
         margin: 0 auto;
+        width: 100%;
     }
 }
